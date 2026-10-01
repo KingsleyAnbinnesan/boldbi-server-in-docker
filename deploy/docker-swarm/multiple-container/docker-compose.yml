@@ -145,9 +145,9 @@ services:
         timeout: 10s
         retries: 5
 
-  bold-mcp:
+  boldbi-mcp-server:
     container_name: bold_mcp_container
-    image: syncfusion/bold-mcp:17.1.30
+    image: syncfusion/boldbi-mcp-server:17.1.30
     restart: always
     volumes:
       - boldservices_data:/application/app_data
@@ -187,7 +187,7 @@ services:
       - bi-jobs
       - bi-dataservice
       - bold-ai
-      - bold-mcp
+      - boldbi-mcp-server
       
   pgdb:
     image: postgres:17
