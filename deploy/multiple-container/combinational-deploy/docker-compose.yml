@@ -178,9 +178,9 @@ services:
         timeout: 10s
         retries: 5
 
-  bold-mcp:
+  boldbi-mcp-server:
     container_name: bold_mcp_container
-    image: syncfusion/bold-mcp:17.1.30
+    image: syncfusion/boldbi-mcp-server:17.1.30
     restart: always
     volumes:
       - boldservices_data:/application/app_data
@@ -326,7 +326,7 @@ services:
         condition: service_started
       bold-ai:
         condition: service_started
-      bold-mcp:
+      boldbi-mcp-server:
         condition: service_started
       reports-web:
         condition: service_started
