@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "syncfusion/boldbi:latest",
+    "Name": "syncfusion/boldbi::17.1.30",
     "Update": "true"
   },
   "Ports": [

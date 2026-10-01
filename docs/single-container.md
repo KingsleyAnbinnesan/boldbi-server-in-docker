@@ -22,7 +22,7 @@
       ```sh
       services:
         boldbi:
-          image: syncfusion/boldbi
+          image: syncfusion/boldbi:17.1.30
           restart: always
           ports:
             - 8085:80
